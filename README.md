@@ -1,6 +1,6 @@
 # Mawu
 
-Elixir wrapper for the Google Calendar API 📅💧💜
+Elixir wrapper for the Google Calendar API  📅 💜💧
 
 ## Installation
 
@@ -32,6 +32,6 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       google_client_secret: 'fdsa'
     ```
 
-   4. **Required** - Check the [Überauth Google readme](https://github.com/ueberauth/ueberauth_google) to implement the Google auth.
+  4. **Required** Check the [Überauth Google readme](https://github.com/ueberauth/ueberauth_google) to implement the Google auth.
 
 ## Usage
