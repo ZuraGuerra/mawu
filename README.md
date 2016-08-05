@@ -22,16 +22,17 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
     end
     ```
 
-  3. Add your Google app keys to the `mawu` configuration,
+  3. Add your Google app keys to the `Uberauth` configuration,
   (you can generate one [here](https://console.developers.google.com/)):
 
     ```elixir
-    config :mawu,
+    config :ueberauth, Ueberauth, providers: [google: {Ueberauth.Strategy.Google, []}]
+    config :ueberauth, Ueberauth.Strategy.Google.OAuth,
       # Please use env vars (ఠ్ఠ ˓̭ ఠ్ఠ)
-      google_client_id: 'asdf',
-      google_client_secret: 'fdsa'
+      client_id: System.get_env("GOOGLE_CLIENT_ID"),
+      client_secret: System.get_env("GOOGLE_CLIENT_SECRET")
     ```
 
-  4. **Required** Check the [Überauth Google readme](https://github.com/ueberauth/ueberauth_google) to implement the Google auth.
+  4. Check the [Überauth Google readme](https://github.com/ueberauth/ueberauth_google) to implement the Google auth.
 
 ## Usage

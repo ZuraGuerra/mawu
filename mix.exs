@@ -31,10 +31,4 @@ defmodule Mawu.Mixfile do
       {:ueberauth_google, "~> 0.2.0"}
     ]
   end
-
-  # Configuration for Uberauth
-  config :ueberauth, Ueberauth, providers: [google: {Ueberauth.Strategy.Google, []}]
-  config :ueberauth, Ueberauth.Strategy.Google.OAuth,
-  client_id: Application.get_env(:mawu, :google_client_id),
-  client_secret: Application.get_env(:mawu, :google_client_secret)
 end
