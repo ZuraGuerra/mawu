@@ -1,0 +1,2 @@
+defmodule Mawu do
+end
